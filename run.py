@@ -1,3 +1,4 @@
+from re import A
 from flask import Flask, request, jsonify,render_template
 from  hpp_app import functions
 import config
@@ -86,3 +87,4 @@ def predict_home_price():
 if __name__ == "__main__":
     print("House Price Prediction ")
     app.run(host='0.0.0.0', port=config.PORT_NUMBER,debug=False)
+    
